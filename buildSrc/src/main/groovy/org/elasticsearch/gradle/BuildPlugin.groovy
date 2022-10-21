@@ -381,7 +381,7 @@ class BuildPlugin implements Plugin<Project> {
                 )
             }
         }
-        return compilerJavaHome
+        return Jvm.current().javaHome
     }
 
     private static String findJavaHome(String version) {

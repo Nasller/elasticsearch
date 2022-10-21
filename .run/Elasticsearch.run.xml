@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Elasticsearch" type="Application" factoryName="Application" nameIsGenerated="true">
+    <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+    <option name="MAIN_CLASS_NAME" value="org.elasticsearch.bootstrap.Elasticsearch" />
+    <module name="elasticsearch.server.main" />
+    <shortenClasspath name="ARGS_FILE" />
+    <option name="VM_PARAMETERS" value="-Xms512m -Xmx512m -Des.path.home=$PROJECT_DIR$/distribution/build/cluster/run_node0/elasticsearch-6.8.24-SNAPSHOT -Des.path.conf=$PROJECT_DIR$/home/config -Djava.security.policy=$PROJECT_DIR$/home/config/elasticsearch.policy" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="org.elasticsearch.bootstrap.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

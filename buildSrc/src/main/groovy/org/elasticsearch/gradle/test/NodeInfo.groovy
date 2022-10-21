@@ -29,9 +29,6 @@ import org.gradle.api.Project
 import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
-
-import static org.elasticsearch.gradle.BuildPlugin.getJavaHome
-
 /**
  * A container for the files and configuration associated with a single node in a test cluster.
  */
@@ -122,7 +119,7 @@ class NodeInfo {
         } else {
             clusterName = project.path.replace(':', '_').substring(1) + '_' + prefix
         }
-        baseDir = new File(project.buildDir, "cluster/${prefix} node${nodeNum}")
+        baseDir = new File(project.buildDir, "cluster/${prefix}_node${nodeNum}")
         pidFile = new File(baseDir, 'es.pid')
         this.nodeVersion = Version.fromString(nodeVersion)
         homeDir = homeDir(baseDir, config.distribution, nodeVersion)
