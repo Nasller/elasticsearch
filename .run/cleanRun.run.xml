@@ -1,0 +1,31 @@
+<!--
+  ~ Copyright Elasticsearch B.V. and/or licensed to Elasticsearch B.V. under one
+  ~ or more contributor license agreements. Licensed under the Elastic License
+  ~ 2.0 and the Server Side Public License, v 1; you may not use this file except
+  ~ in compliance with, at your election, the Elastic License 2.0 or the Server
+  ~ Side Public License, v 1.
+  -->
+
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="cleanRun" type="GradleRunConfiguration" factoryName="Gradle">
+    <ExternalSystemSettings>
+      <option name="executionName" />
+      <option name="externalProjectPath" value="$PROJECT_DIR$/distribution" />
+      <option name="externalSystemIdString" value="GRADLE" />
+      <option name="scriptParameters" value="" />
+      <option name="taskDescriptions">
+        <list />
+      </option>
+      <option name="taskNames">
+        <list>
+          <option value="clean" />
+        </list>
+      </option>
+      <option name="vmOptions" />
+    </ExternalSystemSettings>
+    <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+    <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+    <DebugAllEnabled>false</DebugAllEnabled>
+    <method v="2" />
+  </configuration>
+</component>
