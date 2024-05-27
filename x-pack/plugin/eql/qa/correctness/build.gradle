@@ -30,7 +30,7 @@ testClusters.configureEach {
     }
     testDistribution = 'DEFAULT'
     setting 'xpack.license.self_generated.type', 'basic'
-    jvmArgs '-Xms4g', '-Xmx4g'
+    jvmArgs '-Xms512m', '-Xmx512m'
     setting 'xpack.security.enabled', 'true'
     user username: 'admin', password: 'admin-password', role: 'superuser'
 }
