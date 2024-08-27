@@ -93,6 +93,11 @@ public class EsqlCapabilities {
         ST_DISTANCE,
 
         /**
+         * Fix determination of CRS types in spatial functions when folding.
+         */
+        SPATIAL_FUNCTIONS_FIX_CRSTYPE_FOLDING,
+
+        /**
          * Fix to GROK and DISSECT that allows extracting attributes with the same name as the input
          * https://github.com/elastic/elasticsearch/issues/110184
          */
@@ -122,6 +127,12 @@ public class EsqlCapabilities {
          * Fix for union-types when sorting a type-casted field. We changed how we remove synthetic union-types fields.
          */
         UNION_TYPES_REMOVE_FIELDS,
+
+        /**
+         * Fix for union-types when renaming unrelated columns.
+         * https://github.com/elastic/elasticsearch/issues/111452
+         */
+        UNION_TYPES_FIX_RENAME_RESOLUTION,
 
         /**
          * Fix a parsing issue where numbers below Long.MIN_VALUE threw an exception instead of parsing as doubles.
